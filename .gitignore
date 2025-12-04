@@ -1,0 +1,22 @@
+# --- NO SUBIR EL ENTORNO VIRTUAL ---
+venv/
+ENV/
+env/
+.venv/
+
+# --- ARCHIVOS TEMPORALES DE PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- CONFIGURACIÓN LOCAL ---
+.vscode/
+*.code-workspace
+
+# --- SISTEMA OPERATIVO ---
+.DS_Store
+Thumbs.db
+
+# --- DASH / PLOTLY ---
+*.cache/

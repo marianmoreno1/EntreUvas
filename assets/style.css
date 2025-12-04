@@ -1,0 +1,586 @@
+/* ==========================================
+   BASE & BODY
+========================================== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3E9DF;  /* Beige EntreUvas */
+    font-family: 'Inter', sans-serif;
+    color: #3F452F; /* Verde oscuro del branding */
+}
+
+
+
+/* ==========================================
+   BANNER WRAPPER (80% ancho, centrado)
+========================================== */
+.banner-wrapper {
+    width: 80%;                 /* ✔ 4/5 del ancho como pediste */
+    max-width: 1500px;
+    margin: 1cm auto;
+    border-radius: 20px;
+}
+
+
+/* ==========================================
+   BANNER (foto de fondo + overlay)
+========================================== */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Overlay pastel muy suave */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(243, 233, 223, 0.18);
+}
+
+
+/* ==========================================
+   LOGO EN BANNER
+========================================== */
+.banner-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 75px;
+    border-radius: 18px;
+    z-index: 10;
+}
+
+
+/* ==========================================
+   TEXTO SOBRE EL BANNER
+========================================== */
+.banner-text-container {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    z-index: 5;
+    max-width: 55%;
+}
+
+.banner-title {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    color: #6B7558;    /* Verde oliva */
+    margin-bottom: 0.5rem;
+}
+
+.banner-sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: #3F452F;
+    margin-bottom: 1.3rem;
+}
+
+
+/* ==========================================
+   BOTONES DENTRO DEL BANNER
+========================================== */
+.banner-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner-button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.9rem 1.3rem;
+    border-radius: 16px;
+    font-family: 'Georgia Display', serif;
+    font-size: 1.15rem;
+    color: #30351F;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.banner-button img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Colores */
+.banner-btn-green {
+    background-color: #999567; /* Oliva pastel */
+}
+
+.banner-btn-red {
+    background-color: #cc999d; /* Rosa vino */
+}
+
+
+/* ==========================================
+   SECCIÓN PREDICCIÓN (layouts)
+========================================== */
+/* CONTENEDOR PRINCIPAL DE LA SECCIÓN */
+.section {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0.5cm auto;
+    padding: 4px 40px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+/* IZQUIERDA */
+.section-left {
+    flex: 0 0 40%;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* HEADER (logo + título) */
+.pred-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.pred-logo {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1/1;
+}
+
+.pred-text-block {
+    display: flex;
+    flex-direction: column;
+}
+.pred-title {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin:0;
+    margin-left: 10px;
+    color: #4a5a2c;
+}
+
+/* SUBTÍTULO */
+.pred-sub {
+    margin-left: 10px;
+    font-size: 17px;
+    color: #687c41;
+    margin-top: 10px;
+    display: block;
+}
+
+.market-section {
+    width: 80%;
+    max-width: 1500px;
+    margin: 0 auto 40px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.market-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 20px;
+    min-height: 250px;
+}
+
+
+
+.market-title {
+    font-family: Georgia, serif;
+    color: #3F452F;
+    margin: 0 0 8px 0;
+}
+
+.market-sub {
+    margin: 0;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+.market-hero-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #e3d6c6;
+}
+
+.market-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.market-control-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.market-control-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.market-input label {
+    margin-bottom: 4px;
+}
+
+.market-number {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d4c7b7;
+    border-radius: 10px;
+    background: #f7f0e6;
+    box-sizing: border-box;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.market-card {
+    min-height: 260px;
+}
+
+.market-card-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family: Georgia, serif;
+    color: #3F452F;
+}
+
+.market-table-inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.market-table-inner th,
+.market-table-inner td {
+    text-align: left;
+    padding: 8px 6px;
+    border-bottom: 1px solid #e3d6c6;
+    font-size: 14px;
+}
+
+.market-table-inner th {
+    color: #3F452F;
+    font-weight: 700;
+}
+
+.table-myrow td {
+    font-weight: 700;
+    color: #3F452F;
+}
+
+.table-empty {
+    color: #666;
+    font-size: 14px;
+}
+
+.market-card .dash-graph {
+    height: 240px !important;
+}
+
+/* SLIDERS */
+.slider-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 22px;
+}
+
+.slider-label {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-family: Georgia, serif;
+    color: #4a5a2c;
+    font-weight: 600;
+}
+
+.slider-value {
+    margin-top: -8px;
+    display: inline-block;
+    font-size: 14px;
+    color: #6f7a59;
+    font-weight: 500;
+    padding: 0;
+    border-radius: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========================================================= */
+/*               SLIDERS ESTILO ENTREUVAS 🍇                 */
+/* ========================================================= */
+
+/* Oculta el slider nativo del navegador */
+input[type=range] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+/* Contenedor general */
+.rc-slider {
+    height: 26px !important;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+/* Barra clara (fondo) */
+.rc-slider-rail {
+    background-color: #e7ddcf !important; /* beige pastel suave */
+    height: 4px !important;
+    border-radius: 4px;
+}
+
+/* Barra coloreada (izquierda) */
+.rc-slider-track {
+    background-color: #6B7558 !important; /* verde oliva EntreUvas */
+    height: 4px !important;
+    border-radius: 4px;
+}
+
+/* Circulito */
+.rc-slider-handle {
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: -7px !important;
+    background-color: #F3E9DF !important;
+    border: 2px solid #6B7558 !important;
+    border-radius: 50%;
+    box-shadow: none !important;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover */
+.rc-slider-handle:hover {
+    border-color: #8d9c65 !important;
+    transform: scale(1.05);
+}
+
+/* Click */
+.rc-slider-handle:active {
+    border-color: #556045 !important;
+    transform: scale(1.12);
+}
+
+/* Ocultar dots, puntos y extras */
+.rc-slider-dot,
+.rc-slider-step,
+.rc-slider-handle:before,
+.rc-slider-handle:after {
+    display: none !important;
+}
+
+/* ================================
+   VALORES (marks) DEL SLIDER
+   ================================ */
+
+/* Ocultar TODOS los marks */
+.rc-slider-mark-text {
+    display: none !important;
+}
+
+/* Mostrar SOLO el primer y último */
+.rc-slider-mark-text:first-child,
+.rc-slider-mark-text:last-child {
+    display: block !important;
+    font-size: 13px;
+    color: #6B7558;           /* verde oliva EntreUvas */
+    font-weight: 500;
+}
+
+/* Ajustes de posición */
+.rc-slider-mark {
+    top: 26px !important;     /* separa los números del slider */
+}
+
+
+/* BOTÓN */
+.btn-primary {
+    margin-top: 15px;
+    padding: 14px 25px;
+    background-color: #999567;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    width: 100%;
+}
+
+/* RESULTADO */
+.result-box {
+    margin-top: 20px;
+    background-color: #dba9a5;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #4b2e2e;
+    font-weight: bold;
+}
+/* Texto pequeño debajo del resultado */
+.pred-status {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #7a7a7a;
+    min-height: 18px; /* reservamos espacio para que la caja no salte */
+}
+
+
+/* DERECHA: CAJA DE LA GRÁFICA */
+.section-right {
+    flex: 0 0 60%;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0!important;
+}
+
+#graph-calidad {
+    flex: 1;
+}
+
+.graph-card {
+    height: 450px;
+    min-height: 450px;
+    border-radius: 18px;
+    background: #f7f0e6;
+    border: 1px solid #e3d6c6;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 20px 14px;
+}
+
+.image-card {
+    background: #f7f0e6;
+    border: 1px solid #e3d6c6;
+    padding: 12px;
+    height: 333px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.graph-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+.card {
+    background: #f7f0e6;
+    border: 1px solid #e3d6c6;
+    border-radius: 18px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+}
+
+.form-card {
+    flex: 1;
+}
+
+.graph-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+    color: #3F452F;
+}
+
+.dropdown-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.dropdown-mercado .Select-control,
+.dropdown-mercado .Select-placeholder,
+.dropdown-mercado .Select-value-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #3F452F;
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+@media (max-width: 900px) {
+
+    .banner {
+        height: 360px;
+    }
+
+    .banner-text-container {
+        top: 15%;
+        left: 6%;
+        max-width: 90%;
+    }
+
+    .banner-title {
+        font-size: 2.3rem;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+    }
+
+    .section {
+    width: 80%;                 /* igual que banner-wrapper */
+    max-width: 900px;          /* igual que banner-wrapper */
+    margin: 0.5cm auto;         /* mismo centrado */
+    padding: 36px;
+    flex-direction:column;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;       /* para que ambas columnas tengan misma altura */
+}
+
+
+    .section-right {
+        flex: 0 0 60%;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        
+    }
+}
+
+@media (max-width: 600px) {
+
+    .banner {
+        height: 330px;
+    }
+
+    .banner-title {
+        font-size: 1.9rem;
+    }
+
+    .banner-sub {
+        font-size: 1.1rem;
+    }
+
+    .banner-logo {
+        width: 55px;
+    }
+}
