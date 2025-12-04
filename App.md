@@ -9,17 +9,21 @@ Todo el código, assets y modelos utilizados por la aplicación están ubicados 
 
 ---
 
-## 📁 Estructura del proyecto
+### 📁 Estructura del proyecto
+
+```text
 EntreUvas/
 │
 ├── src/
-│ ├── app.py # Aplicación principal de Dash
-│ ├── data/ # CSVs o datasets limpios utilizados
-│ ├── modelos/ # Modelos entrenados )
-├── assets/
-│ ├── styles.css # Estilos personalizados para la app
-│ └── imágenes / iconos # Recursos visuales
+│   ├── app.py              # Aplicación principal de Dash
+│   ├── data/               # CSVs o datasets limpios utilizados
+│   ├── modelos/            # Modelos entrenados (no incluidos por tamaño)
 │
-├── requirements.txt # Dependencias del proyecto
-├── .gitignore # Archivos/carpetas excluidos del repo
-└── README.md # Este archivo
+├── assets/
+│   ├── styles.css          # Estilos personalizados para la app
+│   └── imágenes / iconos   # Recursos visuales
+│
+├── requirements.txt        # Dependencias del proyecto
+├── .gitignore              # Archivos/carpetas excluidos del repo
+└── README.md               # Este archivo
+```
